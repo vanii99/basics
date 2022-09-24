@@ -5,8 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body
+        {
+            background-color: #2874A6;
+        }
+        #name
+        {
+            text-align: center;
+            background: #D6EAF8 ;
+            border: 15px solid #AED6F1 ;
+            padding: 15px;
+            margin: 15px;
+        }
+        #Felix
+        {
+            text-align: center;
+            background: #D6EAF8 ;
+            border: 15px solid #AED6F1 ;
+            padding: 15px;
+            margin: 15px;
+        }
+        #email
+        {
+            text-align: center;
+            background: #D6EAF8 ;
+            border: 15px solid #AED6F1 ;
+            padding: 15px;
+            margin: 15px;
+        }
+    </style>
 </head>
-<body>
-    
+<script>
+    function largePic(x)
+    {
+        x.style.width = "1280px";
+        x.style.height = "800px";
+    }
+    function normPic(x)
+    {
+        x.style.width = "720px";
+        x.style.height = "500px";
+    }
+    function largeText(y)
+    {
+        document.getElementById("Felixname").style.fontSize = "80px";
+    }
+    function normText(y)
+    {
+        document.getElementById("Felixname").style.fontSize = "50px";
+    }
+</script>
+<body align = "center">
+    <div id = "name">
+        <font size = 500> Name: Varun Baxla</fontsize><br>
+        <font size = 450> Registration Number: 202000235</fontsize>
+    </div>
+    <div id = "Felix">
+        <img onmouseover = "largePic(this)" onmouseout = "normPic(this)"src = "C:\Users\CSE\Desktop\Varun\Scripting Lab\Lab4\FelixGIF.gif" width = "720" height = "500">
+        <p id="Felixname" onmouseover = "largeText(this)" onmouseout = "normText(this)"> Lee Felix</p>
+    </div>
+    <div id = "email">
+        <fontsize = 100>varun_202000235@smit.smu.edu.in</fontsize>
+    </div>
 </body>
 </html>
